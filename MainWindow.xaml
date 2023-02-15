@@ -1,0 +1,59 @@
+﻿<Window x:Class="Lecture_Example___Check_Boxes_and_Radio_Buttons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture_Example___Check_Boxes_and_Radio_Buttons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <Canvas Height="434" Width="332" HorizontalAlignment="Left" Canvas.Left="458" VerticalAlignment="Center">
+                <RichTextBox  Height="378" Width="308" HorizontalAlignment="Left" Canvas.Left="7" VerticalAlignment="Center" Canvas.Top="26" FontSize="18">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run x:Name="rtbRunReceipts" Text=""/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </Canvas>
+            <Canvas Height="434" Width="426" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBox x:Name="tbName" TextWrapping="Wrap" Canvas.Top="53" Width="320" HorizontalAlignment="Left" VerticalAlignment="Center" Height="34" BorderBrush="Black" Canvas.Left="109" FontSize="16"/>
+                <Canvas Height="174" Width="121" Canvas.Top="130" Background="#FFAD9F9F" Canvas.Left="10" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <RadioButton x:Name="rbSmall" Content="Small" Canvas.Left="10" Canvas.Top="31" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbMedium" Content="Medium" Canvas.Left="10" Canvas.Top="63" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbLarge" Content="Large" Canvas.Left="10" Canvas.Top="98" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbExtraLarge" Content="Extra Large" Canvas.Left="10" Canvas.Top="135" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <Label Content="   Size of Pizza" HorizontalAlignment="Left" VerticalAlignment="Center" Width="124" BorderBrush="#00000000" Background="#FF97F1DD" RenderTransformOrigin="0.5,0.5" Canvas.Left="-2" FontFamily="Arial Black">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.009"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                </Canvas>
+                <Label Content="  Name" Canvas.Left="10" Canvas.Top="47" HorizontalAlignment="Center" VerticalAlignment="Top" Width="94" FontSize="25"/>
+                <Canvas Height="174" Width="116" Canvas.Top="130" Background="#FFAD9F9F" Canvas.Left="300" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <RadioButton x:Name="rbDrinkSmall" Content="Small" Canvas.Left="10" Canvas.Top="31" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbDrinkMedium" Content="Medium" Canvas.Left="10" Canvas.Top="63" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbDrinkLarge" Content="Large" Canvas.Left="10" Canvas.Top="98" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <RadioButton x:Name="rbDrinkXL" Content="Extra Large" Canvas.Left="10" Canvas.Top="135" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <Label Content="  Size of Drinks" HorizontalAlignment="Left" VerticalAlignment="Center" Width="119" BorderBrush="#00000000" Background="#FF97F1DD" Canvas.Left="-1" FontFamily="Arial Black"/>
+                </Canvas>
+                <Canvas Height="174" Width="116" Canvas.Top="130" Background="#FFAD9F9F" Canvas.Left="155" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Label Content=" Pizza Toppings " HorizontalAlignment="Left" VerticalAlignment="Center" Width="119" BorderBrush="#00000000" Background="#FF97F1DD" Canvas.Left="-2" FontFamily="Arial Black"/>
+                    <CheckBox x:Name="cbPepporoni" Content="Pepporoni" Canvas.Left="7" Canvas.Top="31" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14"/>
+                    <CheckBox x:Name="cbCheese" Content="Cheese" Canvas.Left="7" Canvas.Top="55" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <CheckBox x:Name="cbMushroom" Content="Mushroom" Canvas.Left="7" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <CheckBox x:Name="cbPineapple" Content="Pineapple" Canvas.Left="7" Canvas.Top="106" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+                    <CheckBox x:Name="cbOnion" Content="Onion" Canvas.Left="8" Canvas.Top="135" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14"/>
+                </Canvas>
+                <Button x:Name="btnOrder" Content="Order" Canvas.Left="136" Canvas.Top="344" HorizontalAlignment="Center" VerticalAlignment="Top" Width="154" Height="42" FontSize="25" Click="btnOrder_Click"/>
+            </Canvas>
+        </Canvas>
+
+    </Grid>
+</Window>
